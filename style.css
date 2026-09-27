@@ -32,6 +32,7 @@ ul {
 li {
   list-style: none;
 }
+
 .nav__link {
   margin-left: 16px;
   text-decoration: none;
@@ -40,7 +41,8 @@ li {
   font-weight: bold;
   padding: 8px;
 }
-.nav_-link:hover {
+
+.nav__link:hover {
   text-decoration: underline;
 }
 
@@ -49,6 +51,6 @@ li {
   border-radius: 4px;
 }
 
-.nav_-link--primary:hover {
+.nav__link--primary:hover {
   text-decoration: none;
 }
