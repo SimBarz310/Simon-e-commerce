@@ -163,7 +163,13 @@ Highlights
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 4px;
   color: #6415ff;
   font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.highlight__subtitle {
+  font-size: 24px;
   margin-bottom: 16px;
 }
