@@ -5,6 +5,10 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+body {
+  max-width: 100vw;
+  overflow: hidden;
+}
 
 nav {
   height: 80px;
@@ -126,6 +130,7 @@ button:active {
 
 .header__img--wrapper {
   padding: 20px;
+  z-index: 2;
 }
 
 .container {
@@ -146,15 +151,9 @@ Highlights
 
 #highlights {
   position: relative;
+  max-width: 100vw;
 }
 
-/*#highlights:after {
-  background: url(E-commerce-assets/wave.svg);
-  content:"";
-  position: absolute
-  width: 101vw;
-  height: 12vw;
-}*/
 
 #highlights:before {
   background: url(E-commerce-assets/wave.svg);
@@ -170,6 +169,20 @@ Highlights
   transform: translateY(-100%);
 }
 
+
+#highlights:after {
+  background: url(E-commerce-assets/wave.svg);
+  content: "";
+  position: absolute;
+  width: 101vw;
+  height: 12vw;
+  bottom: 1px;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(100%) rotate(180deg);
+}
 
 
 .highlight__wrapper {
@@ -206,4 +219,15 @@ Highlights
 .highlight__subtitle {
   font-size: 24px;
   margin-bottom: 16px;
+}
+
+/*
+ 
+FEATRUES
+
+*/
+
+#features {
+  height: 1000px;
+ background-color: rgba(115, 66, 214, 0.1); 
 }
