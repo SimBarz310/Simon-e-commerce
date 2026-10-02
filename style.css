@@ -306,6 +306,11 @@ footer {
   background-color: #242424;
 }
 
+.footer__logo {
+  display: flex;
+  justify-content: center;
+}
+
 .footer__logo--img {
   width: 160px;
   filter: grayscale(1) invert(1);
@@ -313,11 +318,13 @@ footer {
 
 .footer__link,
 .footer__copyright {
+  display: flex;
   color: #fff;
+  justify-content: center;
 }
 
 .footer__list {
-  margin-bottom: 24px;
+  margin: 20px 0 24px 0;
 }
 
 .footer__link {
