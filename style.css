@@ -414,7 +414,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .book {
+  .books{
     width: 50%;
   }
   .header__description {
@@ -440,9 +440,11 @@ footer {
     width: 100%;
   }
 
-.highlight:not(:last-child) {
+  .highlight:not(:last-child) {
   margin-bottom: 24px;
-}
+  }
 
-.btn__menu {
-  display: bl
+  .btn__menu {
+  display: block;
+  }
+}
