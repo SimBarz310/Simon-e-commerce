@@ -99,17 +99,27 @@ li {
   background-color:#242424;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100vw;
   height: 100vh;
   z-index: 100;
-  /*display: flex;*/
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
+  transition: all 300ms ease;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .menu--open .menu__backdrop {
-  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu--open {
+  max-height: 100vh;
+  overflow-y: hidden;
 }
 
 .btn__menu--close {
@@ -406,4 +416,14 @@ footer {
   .book {
     width: 50%;
   }
+}
+
+@media (max-width: 550px) {
+  .nav__links {
+    display: none;
+  }
+}
+
+.btn__menu {
+  display: block;
 }
