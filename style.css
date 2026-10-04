@@ -436,14 +436,13 @@ footer {
     display: none;
   }
 
-  .hightlight {
-    width: 100%;
+  .highlight {
+    width:100%;
   }
 
   .highlight:not(:last-child) {
-  margin-bottom: 24px;
+    margin-bottom: 24px;
   }
-
   .btn__menu {
   display: block;
   }
